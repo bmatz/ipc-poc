@@ -1,0 +1,12 @@
+bin/
+dist/
+out/
+coverage/
+scripts/
+config/
+build/
+.nyc_output
+!.storybook
+legacy/
+node_modules/
+non-working-erb/

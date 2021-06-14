@@ -1,0 +1,7 @@
+dist/
+node_modules/
+non-working-erb/
+legacy/
+out/
+build/
+bin/

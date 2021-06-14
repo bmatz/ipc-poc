@@ -1,0 +1,69 @@
+{
+    "extends": ["trigo/react", "plugin:@typescript-eslint/recommended", "prettier"],
+    "plugins": ["prettier", "jest"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "node": true,
+        "browser": true,
+        "jest/globals": true
+    },
+    "settings": {
+        "jest": {
+            "version": 26
+        }
+    },
+    "rules": {
+        // "arrow-body-style": 0,
+        "jsx-a11y/label-has-associated-control": [
+            "error",
+            {
+                "required": {
+                    "some": ["nesting", "id"]
+                }
+            }
+        ],
+        "jsx-a11y/label-has-for": [
+            "error",
+            {
+                "required": {
+                    "some": ["nesting", "id"]
+                }
+            }
+        ],
+        "jsx-a11y/anchor-is-valid": 0,
+        "jsx-a11y/href-no-hash": 0,
+
+        "import/extensions": 0,
+
+        "no-console": 1,
+        "no-underscore-dangle": 0,
+        "no-confusing-arrow": 0,
+        // "compat/compat": 2,
+        "no-unused-vars": 1,
+        "no-unreachable": 1,
+
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": "warn",
+        "@typescript-eslint/no-empty-function": "warn",
+
+        "react-hooks/exhaustive-deps": "warn",
+
+        "react/no-array-index-key": 0,
+        "react/forbid-prop-types": 0,
+        "react/no-did-mount-set-state": 0,
+        "react/prop-types": 1,
+        "react/jsx-handler-names": 1,
+
+        "prettier/prettier": ["error"],
+
+        "filenames/match-exported": 0,
+        "filenames/match-regex": 0
+    }
+}
